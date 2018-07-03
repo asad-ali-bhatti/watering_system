@@ -129,6 +129,9 @@ GEM
     passenger (5.3.3)
       rack
       rake (>= 0.8.1)
+    passenger-rails (0.0.2)
+      passenger
+      rack
     pg (1.0.0)
     public_suffix (3.0.2)
     puma (3.11.4)
@@ -231,6 +234,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   passenger
+  passenger-rails
   pg
   puma
   rails (~> 5.2.0)

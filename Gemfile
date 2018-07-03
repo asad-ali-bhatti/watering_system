@@ -65,6 +65,7 @@ end
 
 group :production do
   # Use passenger as the app server
+  gem 'passenger-rails'
   gem 'passenger'
 end
 
