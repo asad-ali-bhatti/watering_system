@@ -65,8 +65,8 @@ end
 
 group :production do
   # Use passenger as the app server
-  gem 'passenger-rails'
   gem 'passenger'
+  gem 'passenger-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

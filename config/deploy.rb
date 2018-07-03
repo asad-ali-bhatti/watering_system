@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:asad-ali-bhatti/watering_system.git'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '~/projects/watering_system'
+set :deploy_to, '~/projects/watering_system_webapp'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
