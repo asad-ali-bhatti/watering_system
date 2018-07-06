@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+
   def command
     ActionCable.server.broadcast 'pi_commands_channel',
                                  command: params[:command]
@@ -11,6 +12,8 @@ class HomeController < ApplicationController
   end
 
   def notify
+    @log = Log.create(status: params[:status])
+    NotifyMailer.with(log: @log).notification_email.deliver_now
   end
 
   def logs
