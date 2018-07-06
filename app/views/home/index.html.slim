@@ -2,5 +2,7 @@
   .col.col-md-12
     .text-center
       h1 Welcome to Plant Watering System
-      = link_to "Turn on the Pump",  home_notify_path, method: :post, class: 'btn btn-success'
+      = link_to "Turn on the Pump",  home_command_path(command: 'turn_on'), method: :post, class: 'btn btn-success'
+      = ' '
+      = link_to "Turn off the Pump",  home_command_path(command: 'turn_off'), method: :post, class: 'btn btn-danger'
 

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  post 'home/command'
   post 'home/notify'
+  get 'home/logs'
   get 'home/index'
 
   root 'home#index'

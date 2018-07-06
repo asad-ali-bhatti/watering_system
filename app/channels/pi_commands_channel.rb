@@ -8,9 +8,7 @@ class PiCommandsChannel < ApplicationCable::Channel
     print 'Channel UnSubscribed'
   end
 
-  def love(data)
-    print "Love you"
-    print data
-    ActionCable.server.broadcast "pi_commands_channel", {"message": "HELOOOOOOOO!!!!"}
+  def ping
+     print "Ping from Client!!!!!!!"
   end
 end

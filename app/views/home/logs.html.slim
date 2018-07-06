@@ -1,0 +1,13 @@
+table.table.table-striped
+  thead.thead-dark
+    tr
+      th Id
+      th Status
+      th Created At
+
+  tbody
+    - @logs.each do |log|
+      tr
+        td = log.id
+        td = log.status_name
+        td = log.created_at
