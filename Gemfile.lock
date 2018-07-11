@@ -67,6 +67,8 @@ GEM
     capistrano-rails (1.4.0)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-rails-collection (0.1.0)
+      capistrano-rails (~> 1.1)
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
@@ -254,6 +256,7 @@ DEPENDENCIES
   capistrano (~> 3.7, >= 3.7.1)
   capistrano-passenger (~> 0.2.0)
   capistrano-rails (~> 1.2)
+  capistrano-rails-collection
   capistrano-rvm
   capybara (>= 2.15, < 4.0)
   chromedriver-helper
